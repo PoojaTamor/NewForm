@@ -162,10 +162,11 @@
       .left-heading span {
         font-weight: bold;
       }
-      .form-control:focus input[type="text"] {
+      .form-control input[type="text"]:focus {
         background-color: transparent;
 
-        outline: 0;
+
+        outline: none;
       }
       .right-heading {
         font-size: 45px;
@@ -237,7 +238,7 @@
         background-color: transparent;
         color: gray;
         border: none;
-        font-size: 18px;
+        font-size: 15px;
         width: 170px;
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -296,6 +297,7 @@
       .radio-container .radio-label {
         display: block;
         font-size: 13px;
+        font-weight: 600;
       }
 
       .radio-container input[type="radio"]:checked + .radio-label {
@@ -1027,7 +1029,7 @@
               <div
                 class="form-group servicebox d-flex align-items-center my-md-4 my-2"
               >
-                <label for="serviceDate" class="form-label col-7 service-lable"
+                <label for="serviceDate" class="form-label col-6 col-sm-7 service-lable"
                   >Service Date</label
                 >
                 <input
@@ -1035,7 +1037,7 @@
                   class="form-control date-input"
                   id="serviceDate"
                   name="service_date"
-                  placeholder="MM/DD/YY"
+                  placeholder="MM / DD / YY"
                   required
                 />
               </div>
@@ -1225,6 +1227,7 @@
             function (response) {
               console.log("SUCCESS!", response.status, response.text);
               alert("Email sent successfully with the image details!");
+              document.getElementById("warrantyForm").reset(); // Reset all fields
             },
             function (error) {
               console.error("FAILED...", error);
