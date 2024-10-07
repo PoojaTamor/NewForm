@@ -14,16 +14,15 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-       (function() {
-            emailjs.init("1c4y2FTo1ssJxkd6N"); // Apna EmailJS user ID yahan daalein
-        })();
-    
+      (function () {
+        emailjs.init("1c4y2FTo1ssJxkd6N"); // Apna EmailJS user ID yahan daalein
+      })();
     </script>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap");
 
-      *{
+      * {
         margin: 0px;
         padding: 0px;
       }
@@ -50,32 +49,28 @@
 
       /* General CSS to import these fonts */
 
-   
       .left-section {
-        background-color:  #F0F0F0;
-        ;
+        background-color: #f0f0f0;
         padding-left: 0px;
         padding-right: 0px;
         /* padding-inline: 20px; */
       }
-       
+
       .right-section {
         background-color: #000;
         color: white;
-        
-        padding:30px 20px 0px 40px;
-    
+
+        padding: 30px 20px 0px 40px;
       }
-      .right-section h3{
-        font-size: 55px;
+      .right-section h3 {
+        font-size: 45px;
         font-weight: 700px;
       }
-     .bottom-text{
-      color: #DBDBDB;
-      font-size: 20px;
-      font-weight: 400;
-      
-     }
+      .bottom-text {
+        color: #dbdbdb;
+        font-size: 20px;
+        font-weight: 400;
+      }
 
       h2,
       h3 {
@@ -85,7 +80,6 @@
       h3 {
         margin-bottom: 20px;
       }
-
 
       .form-control {
         border-radius: 8px;
@@ -110,6 +104,7 @@
         /* text-align: center; */
         font-weight: 400;
         font-size: 32px;
+        margin-top: 33px;
         /* height: 162px; */
       }
 
@@ -126,7 +121,7 @@
         background-color: #e6b800;
       }
       .custom-input {
-        background: #DBDBDB;
+        background: #dbdbdb;
         border: none; /* Remove border */
         border-radius: 5px; /* Rounded corners */
         height: 50px; /* Custom height for larger input */
@@ -139,15 +134,7 @@
         box-shadow: none; /* Remove shadow on focus */
         border: 2px solid #ccc;
       }
- 
 
-
-
-      .form-label {
-        font-weight: bold;
-        font-weight: 600;
-
-      }
       .custom-input1 {
         border: none;
         background-color: transparent;
@@ -158,8 +145,7 @@
         font-size: 0.9rem;
         font-style: italic;
         color: #282828;
-        font-family: "Poppins", sans-serif; 
-
+        font-family: "Poppins", sans-serif;
       }
 
       h4 {
@@ -168,22 +154,20 @@
         margin-bottom: 10px;
       }
 
-      .left-heading{
+      .left-heading {
         font-weight: 400;
-        font-size: 55px;
+        font-size: 45px;
         color: #444444;
-
-
       }
-      .left-heading span{
+      .left-heading span {
         font-weight: bold;
       }
       .form-control:focus input[type="text"] {
         background-color: transparent;
 
         outline: 0;
-      }    
-      .right-heading{
+      }
+      .right-heading {
         font-size: 45px;
         font-weight: 100;
         color: rgb(196, 196, 196);
@@ -206,7 +190,7 @@
         background-color: #e6b800;
         color: #000;
       }
-      .service-lable{
+      .service-lable {
         font-size: 20px;
       }
       .btn-check:checked + .btn,
@@ -243,40 +227,40 @@
 
       /* Styling the labels */
       .form-label {
-        font-weight: bold;
         margin-bottom: 5px;
         display: block;
         font-size: 24px;
+        font-weight: 500;
       }
- 
-input[type="date"]{
-  background-color: transparent;
-  color: gray;
-  border: none;
-  font-size: 18px;
-  width: 170px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 
-}
-.Vehiclerow  .form-label{
-  color: #444444;
-  font-size: 22px;
-  /* text-align: center; */
-}
+      input[type="date"] {
+        background-color: transparent;
+        color: gray;
+        border: none;
+        font-size: 18px;
+        width: 170px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .Vehiclerow .form-label {
+        color: #444444;
+        font-size: 22px;
+        /* text-align: center; */
+      }
 
       .form-text {
         color: #999; /* Muted grey color */
         font-size: 0.85rem;
       }
-      .lest-div{
+      .lest-div {
         padding-inline: 3rem;
       }
 
-      .form-control:focus{
+      .form-control:focus {
         box-shadow: none;
+        border-color: #000;
       }
-      .custom-input1:focus{
+      .custom-input1:focus {
         box-shadow: none;
         background-color: transparent;
       }
@@ -285,314 +269,826 @@ input[type="date"]{
         margin-bottom: 25px;
       }
       .radio-buttons {
-  display: flex;
-  gap: 30px;
-}
+        display: flex;
+        gap: 30px;
+      }
 
-.toprow{
-  margin-top: 30px;
-}
-.radio-container {
-  position: relative;
-  display: inline-block;
-  /* padding: 10px 20px; */
-  border-radius: 20px;
-  border: 2px solid black;
-  cursor: pointer;
-  font-family: Arial, sans-serif;
-  font-size: 17px;
-  text-transform: uppercase;
-  transition: background-color 0.3s, color 0.3s;
-}
+      .toprow {
+        margin-top: 30px;
+      }
+      .radio-container {
+        position: relative;
+        display: inline-block;
+        /* padding: 10px 20px; */
+        border-radius: 20px;
+        border: 2px solid black;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+        transition: background-color 0.3s, color 0.3s;
+      }
 
-.radio-container input[type="radio"] {
-  display: none; /* Hide the default radio button */
-}
+      .radio-container input[type="radio"] {
+        display: none; /* Hide the default radio button */
+      }
 
-.radio-container .radio-label {
-  display: block;
-}
+      .radio-container .radio-label {
+        display: block;
+        font-size: 13px;
+      }
 
-.radio-container input[type="radio"]:checked + .radio-label {
-  background-color: #e6b800;
-  color: black;
-  border-color: #e6b800;
-}
+      .radio-container input[type="radio"]:checked + .radio-label {
+        background-color: #e6b800;
+        color: black;
+        border-color: #e6b800;
+        
+      }
 
-.radio-container .radio-label {
-  padding: 5px 10px;
-  background-color: #E4E4E4;
-  ;
-  color: black;
-  border-radius: 20px;
-  transition: background-color 0.3s, color 0.3s;
-}
-.yellow-bg p{
-    font-size: 30px;
-    /* font-weight:; */
-}
-#amountPaid{
-  border-radius: 3px;
-}
-.vehicleinfo{
-  font-size: 25px;
-  margin-left: 10px;
-}
-.file-upload{
-  padding-block: 10px;
-}
-.amountfild{
-  padding-block: 20px;
-}
-.servicebox{
-  padding-block: 10px;
-}
+      .radio-container .radio-label {
+        padding: 5px 10px;
+        background-color: #e4e4e4;
+        color: black;
+        border-radius: 20px;
+        transition: background-color 0.3s, color 0.3s;
+      }
 
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
-    cursor: pointer;
-    padding-block: 10px;
-}
+      .yellow-bg p {
+        font-size: 30px;
+        /* font-weight:; */
+      }
+      #amountPaid {
+        border-radius: 3px;
+      }
+      .vehicleinfo {
+        font-size: 25px;
+        margin-left: 10px;
+      }
+      .file-upload {
+        padding-block: 10px;
+      }
+      .amountfild {
+        padding-block: 20px;
+      }
+      .servicebox {
+        padding-block: 10px;
+      }
+      .Vehiclerow select ,.Vehiclerow input[type="text"]{
+        border-radius: 0px;
+        border: none;
+        border-bottom: 1px solid #000;
+        background-color: transparent;
+      }
+      .Vehiclerow select:focus {
+        background-color: transparent;
+      }
+      .Vehiclerow .form-control  {
+        padding: 10px 10px;
+      }
+      .Vehiclerow .form-label {
+        margin-left: 10px;
+      }
+      .Vehiclerow input[type="text"]{
+        padding: 10px 10px;
+       width: 270px;
+
+      }
+      .Vehiclerow input[type="text"]:focus{
+        outline: none;
+      }
+      
+      [type="button"]:not(:disabled),
+      [type="reset"]:not(:disabled),
+      [type="submit"]:not(:disabled),
+      button:not(:disabled) {
+        cursor: pointer;
+        padding-block: 10px;
+      }
+      .Covered {
+        display: block;
+      }
+
       @media (max-width: 768px) {
         .warranty-card {
           flex-direction: column;
         }
-        .lest-div{
-        padding-inline: 1rem;
-      }
-      .Vehiclerow{
-        font-size: 9px;
-        text-align: center;
-      }
-      .text-muted1{
-        font-size: 5px;
-      }
-      .numberlable , .namelable
-      {
-        font-size: 11px;
-      }
-      
-      .Vehiclerow .form-label{
-        font-size: 9px;
-      }
-      .toprow{
-        padding-inline: 12px;
-        margin-top: 19px;
-      }
-      .vehicleinfo {
-        font-size: 11px;
-      }
-      .container {
-    margin-top: 0px;
-}
-.warranty-card {
-    border-radius: 0px;
- 
-}
+        .lest-div {
+          padding-inline: 1rem;
+        }
+        .radio-container .radio-label {
+          font-size: 10px;
+        }
+        .Vehiclerow {
+          font-size: 9px;
+          /* text-align: center; */
+        }
+        .text-muted1 {
+          font-size: 5px;
+        }
+        .numberlable,
+        .namelable {
+          font-size: 11px;
+        }
 
-.servicebox{
-  padding-block: 8px;
-}
+        .Vehiclerow .form-label {
+          font-size: 9px;
+        }
+        .toprow {
+          padding-inline: 12px;
+          margin-top: 19px;
+        }
+        .vehicleinfo {
+          font-size: 11px;
+        }
+        .container {
+          margin-top: 0px;
+        }
+        .warranty-card {
+          border-radius: 0px;
+        }
 
-.serviceotlet{
-    font-size: 11px
-}
+        .servicebox {
+          padding-block: 8px;
+        }
 
-.custom-input {
-  height: 30px;
-  font-size: 11px;
-}
-.yellow-bg p{
-    font-size: 14px;
-    padding-top: 10px;
-}
-.right-heading{
-    font-size: 22px;
-}
-.right-section h3{
-  font-size: 25px;
-}
-.right-section{
-  padding: 20px 25px  25px 25px;
-}
-.bottom-text{
-  font-size: 13px;
-}
-.service-lable {
-    font-size: 16px;
-}
-.form-text {
-        color: #999; /* Muted grey color */
-        font-size: 6px;
-        /* font-size: 0.75rem; */
-      }
-      .upload-btn {
-        border-radius: 5px;
-        padding: 5px 10px;
-    font-size: 12px;
-   
-}
-input[type="date"]{
+        .serviceotlet {
+          font-size: 11px;
+        }
 
-  font-size: 16px;
-  width: 140px;
-}
-.amountfild{
-  padding-block: 25px;
-}
-.left-heading{
-        font-weight: 100;
-        padding-left: 17px;
-        padding-bottom: 10px;
-        font-size: 25px;
-        
-      }
-      h4{
-        margin-bottom: 26px;
-      }
-      .custom-input1 {
-    border: none;
-    background-color: transparent;
-    font-size: 10px;
-    /* padding: 8px; */
-    border-radius: 0px;
-    /* text-align: center; */
-}
-#amountPaid{
-  font-size: 12px;
-}
-.radio-container {
-   
-   font-size: 12px;
+        .custom-input {
+          height: 30px;
+          font-size: 11px;
+        }
+        .yellow-bg p {
+          font-size: 14px;
+          padding-top: 10px;
+        }
+        .yellow-bg {
+          margin-top: 10px;
+        }
+        .right-heading {
+          font-size: 22px;
+        }
+        .right-section h3 {
+          font-size: 25px;
+        }
+        .right-section {
+          padding: 20px 25px 25px 25px;
+        }
+        .bottom-text {
+          font-size: 13px;
+        }
+        .service-lable {
+          font-size: 16px;
+        }
+        .form-text {
+          color: #999; /* Muted grey color */
+          font-size: 6px;
+          /* font-size: 0.75rem; */
+        }
+        .upload-btn {
+          border-radius: 5px;
+          padding: 5px 10px;
+          font-size: 12px;
+        }
+        input[type="date"] {
+          font-size: 12px;
+          width: 140px;
+        }
+        .amountfild {
+          padding-block: 25px;
+        }
+        .left-heading {
+          font-weight: 100;
+          padding-left: 17px;
+          padding-bottom: 10px;
+          font-size: 25px;
+        }
+        h4 {
+          margin-bottom: 26px;
+        }
+        .custom-input1 {
+          border: none;
+          background-color: transparent;
+          font-size: 10px;
+          /* padding: 8px; */
+          border-radius: 0px;
+          /* text-align: center; */
+        }
 
-}
-.outlate{
-  padding-left: 10px;
-}
-.filebox{
-  margin-block: 10px;
-  display: flex;
-  justify-content: space-between;
+        #amountPaid {
+          font-size: 12px;
+        }
+        .radio-container {
+          font-size: 12px;
+        }
+        .outlate {
+          padding-left: 10px;
+        }
+        .filebox {
+          margin-block: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .Vehiclerow .form-control {
+          padding: 10px 10px;
+          font-size: 9px;
+        }
+        .Vehiclerow input[type="text"] {
+    padding: 10px 10px;
+    width: 94px;
 }
       }
     </style>
-    
   </head>
   <body>
-    <div class="container-fluid ">
-        <form  id="warrantyForm">
-          <div class="row warranty-card">
-            <div class="col-lg-8 left-section">
-
-              <div class="lest-div">
-                <h2 class="left-heading text-muted mt-4 ">
-                  Warranty Card <br /><span class="text-dark">Details</span>
-                </h2>
-                <div class="row   toprow " >
-                  <div class="col-6 mb-3">
-                    <label for="customerName" class="form-label namelable">Customer Name</label>
-                    <input type="text" class="form-control custom-input" id="customerName"  name="customer_name" required/>
-                  </div>
-                  <div class="col-6 mb-3">
-                    <label for="phoneNumber" class="form-label numberlable">Phone Number <span class=" text-muted1">(Whatsapp Must)</span></label>
-                    <input type="text" class="form-control custom-input " id="phoneNumber" name="phone_number" required/>
-                  </div>
+    <div class="container-fluid">
+      <form id="warrantyForm">
+        <div class="row warranty-card">
+          <div class="col-lg-8 left-section">
+            <div class="lest-div">
+              <h2 class="left-heading text-muted mt-4">
+                Warranty Card <br /><span class="text-dark">Details</span>
+              </h2>
+              <div class="row toprow">
+                <div class="col-6 mb-3">
+                  <label for="customerName" class="form-label namelable"
+                    >Customer Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control custom-input"
+                    id="customerName"
+                    name="customer_name"
+                    required
+                  />
                 </div>
-      
-                <h4 class="pt-md-3 vehicleinfo">Vehicle Information</h4>
-                <div class="row pt-md-3 gx-sm-3 gx-2 Vehiclerow">
-                  <div class="col-3 mb-3">
-                    <label for="vehicleType" class="form-label">Vehicle Type</label>
-                    <input type="text" class="form-control custom-input1 border-bottom" id="vehicleType"  name="vehicle_type" required/>
-                  </div>
-                  <div class="col-3 mb-3">
-                    <label for="modelNumber" class="form-label">Model & Number</label>
-                    <input type="text" class="form-control custom-input1 border-bottom" id="modelNumber" name="model_number" required/>
-                  </div>
-                  <div class="col-3 mb-3">
-                    <label for="color" class="form-label">Color</label>
-                    <input type="text" class="form-control custom-input1 border-bottom" id="color" name="color" required />
-                  </div>
-                  <div class="col-3 mb-3">
-                    <label for="year" class="form-label">Year</label>
-                    <input type="text" class="form-control custom-input1 border-bottom" id="year" name="year" required />
-                  </div>
-                </div>
-      
-                <div class="mb-1 mb-sm-3 col-6 pt-md-3 outlate">
-                  <label for="serviceOutlet" class="form-label serviceotlet">Select the Service Outlet</label>
-                  <input type="text" class="form-control custom-input1  serviceside border-bottom " name="service_outlet" id="serviceOutlet" />
+                <div class="col-6 mb-3">
+                  <label for="phoneNumber" class="form-label numberlable"
+                    >Phone Number
+                    <span class="text-muted1">(Whatsapp Must)</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control custom-input"
+                    id="phoneNumber"
+                    name="phone_number"
+                    required
+                  />
                 </div>
               </div>
-             
-               <div class="yellow-bg">
-        <p class="ps-4 ps-sm-5">Our promise to you – <br> <strong>Quality & Satisfaction</strong></p>
-      </div>
+
+              <h4 class="pt-md-3 vehicleinfo">Vehicle Information</h4>
+              <div class="row pt-md-3 gx-4 Vehiclerow">
+                <div class="col-4 mb-3">
+                  <label for="Body-Type" class="form-label namelable"
+                    >Body Type</label
+                  >
+
+                  <select
+                    class="form-control"
+                    name="Body-Type"
+                    id="Body-Type"
+                    required
+                  >
+                    <option value="" disabled selected></option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="MUV">MUV</option>
+                    <option value="Luxury">Luxury</option>
+                    <option value="Minivan">Minivan</option>
+                  </select>
+                </div>
+                <div class="col-4 mb-3">
+                  <label for="Brand" class="form-label namelable">Brand</label>
+                  <select class="form-control" name="Brand" id="Brand" required>
+                    <option value="" disabled selected></option>
+                    <option value="Maruti Suzuki">Maruti Suzuki</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Tata">Tata</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Mahindra">Mahindra</option>
+                    <option value="Kia">Kia</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Skoda">Skoda</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Datsun">Datsun</option>
+                    <option value="MG Motors">MG Motors</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Land Rover">Land Rover</option>
+                    <option value="Citroen">Citroen</option>
+                  </select>
+                </div>
+
+                <div class="col-4 mb-3">
+                  <label for="Model" class="form-label namelable">Model</label>
+
+                  <select class="form-control" name="Model" id="Model" required>
+                    <option value="" disabled selected></option>
+                    <option value="Baleno">Baleno</option>
+                    <option value="Wagon R">Wagon R</option>
+                    <option value="Dzire">Dzire</option>
+                    <option value="Swift">Swift</option>
+                    <option value="Ciaz">Ciaz</option>
+                    <option value="Brezza">Brezza</option>
+                    <option value="Alto 800">Alto 800</option>
+                    <option value="Celerio">Celerio</option>
+                    <option value="Alto">Alto</option>
+                    <option value="S-Presso">S-Presso</option>
+                    <option value="Ertiga">Ertiga</option>
+                    <option value="Ignis">Ignis</option>
+                    <option value="S-Cross">S-Cross</option>
+                    <option value="XL6">XL6</option>
+                    <option value="Ritz">Ritz</option>
+                    <option value="A-Star">A-Star</option>
+                    <option value="Eeco">Eeco</option>
+                    <option value="Grand Vitara">Grand Vitara</option>
+                    <option value="New Ertiga">New Ertiga</option>
+                    <option value="Celerio X">Celerio X</option>
+                    <option value="Fronx">Fronx</option>
+                    <option value="Jimny">Jimny</option>
+                    <option value="1000">1000</option>
+                    <option value="800">800</option>
+                    <option value="Esteem">Esteem</option>
+                    <option value="Estilo">Estilo</option>
+                    <option value="Gypsy">Gypsy</option>
+                    <option value="Invicto">Invicto</option>
+                    <option value="Omni">Omni</option>
+                    <option value="SX4">SX4</option>
+                    <option value="Versa">Versa</option>
+                    <option value="Zen">Zen</option>
+                    <option value="Zen Estilo">Zen Estilo</option>
+                    <option value="Grand i10">Grand i10</option>
+                    <option value="i20">i20</option>
+                    <option value="Verna">Verna</option>
+                    <option value="Creta">Creta</option>
+                    <option value="Venue">Venue</option>
+                    <option value="New Santro 1.1">New Santro 1.1</option>
+                    <option value="Xcent">Xcent</option>
+                    <option value="i10">i10</option>
+                    <option value="Eon">Eon</option>
+                    <option value="Grand i10 Nios">Grand i10 Nios</option>
+                    <option value="Aura">Aura</option>
+                    <option value="Alcazar">Alcazar</option>
+                    <option value="Santro Xing">Santro Xing</option>
+                    <option value="Elantra">Elantra</option>
+                    <option value="Tucson">Tucson</option>
+                    <option value="Accent">Accent</option>
+                    <option value="Accent Viva">Accent Viva</option>
+                    <option value="Creta N-Line">Creta N-Line</option>
+                    <option value="Exter">Exter</option>
+                    <option value="Getz">Getz</option>
+                    <option value="Getz Prime">Getz Prime</option>
+                    <option value="Neo Fluidic Elantra">
+                      Neo Fluidic Elantra
+                    </option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santro">Santro</option>
+                    <option value="Sonata">Sonata</option>
+                    <option value="Sonata Embera">Sonata Embera</option>
+                    <option value="Terracan">Terracan</option>
+                    <option value="Venue N-Line">Venue N-Line</option>
+                    <option value="Amaze">Amaze</option>
+                    <option value="City">City</option>
+                    <option value="Brio">Brio</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="WR-V">WR-V</option>
+                    <option value="Mobilio">Mobilio</option>
+                    <option value="BR-V">BR-V</option>
+                    <option value="Civic">Civic</option>
+                    <option value="CR-V">CR-V</option>
+                    <option value="Elevate">Elevate</option>
+                    <option value="Accord">Accord</option>
+                    <option value="Civic Hybrid">Civic Hybrid</option>
+                    <option value="Nexon">Nexon</option>
+                    <option value="Tiago">Tiago</option>
+                    <option value="Altroz">Altroz</option>
+                    <option value="Punch">Punch</option>
+                    <option value="Tigor">Tigor</option>
+                    <option value="Tiago NRG">Tiago NRG</option>
+                    <option value="Harrier">Harrier</option>
+                    <option value="Hexa">Hexa</option>
+                    <option value="Zest">Zest</option>
+                    <option value="Aria">Aria</option>
+                    <option value="Bolt">Bolt</option>
+                    <option value="Curvy">Curvy</option>
+                    <option value="Indica">Indica</option>
+                    <option value="Indica eV2">Indica eV2</option>
+                    <option value="Indica V2">Indica V2</option>
+                    <option value="Indica V2 Turbo">Indica V2 Turbo</option>
+                    <option value="Indica V2 Xeta">Indica V2 Xeta</option>
+                    <option value="Indica Vista">Indica Vista</option>
+                    <option value="Indicab">Indicab</option>
+                    <option value="Indigo">Indigo</option>
+                    <option value="Indigo CS">Indigo CS</option>
+                    <option value="Indigo eCS">Indigo eCS</option>
+                    <option value="Indigo Marina">Indigo Marina</option>
+                    <option value="Indigo XL">Indigo XL</option>
+                    <option value="Manza">Manza</option>
+                    <option value="Movus">Movus</option>
+                    <option value="Nano">Nano</option>
+                    <option value="Nano GenX">Nano GenX</option>
+                    <option value="Nexon EV">Nexon EV</option>
+                    <option value="Nexon EV Max">Nexon EV Max</option>
+                    <option value="Nexon EV Prime">Nexon EV Prime</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Safari Storme">Safari Storme</option>
+                    <option value="Sierra">Sierra</option>
+                    <option value="Sumo">Sumo</option>
+                    <option value="Sumo Gold">Sumo Gold</option>
+                    <option value="Sumo Grande">Sumo Grande</option>
+                    <option value="Sumo Grande MK II">Sumo Grande MK II</option>
+                    <option value="Sumo Spacio">Sumo Spacio</option>
+                    <option value="Sumo Victa">Sumo Victa</option>
+                    <option value="Tiago EV">Tiago EV</option>
+                    <option value="Tigor EV">Tigor EV</option>
+                    <option value="Venture">Venture</option>
+                    <option value="Vista Tech">Vista Tech</option>
+                    <option value="Xenon XT">Xenon XT</option>
+                    <option value="Kwid">Kwid</option>
+                    <option value="Kiger">Kiger</option>
+                    <option value="Triber">Triber</option>
+                    <option value="Duster">Duster</option>
+                    <option value="Captur">Captur</option>
+                    <option value="Fluence">Fluence</option>
+                    <option value="Koleos">Koleos</option>
+                    <option value="Lodgy">Lodgy</option>
+                    <option value="Logan">Logan</option>
+                    <option value="Pulse">Pulse</option>
+                    <option value="Scala">Scala</option>
+                    <option value="Thar">Thar</option>
+                    <option value="XUV 300">XUV 300</option>
+                    <option value="XUV500">XUV500</option>
+                    <option value="XUV700">XUV700</option>
+                    <option value="Scorpio">Scorpio</option>
+                    <option value="Scorpio N">Scorpio N</option>
+                    <option value="Bolero Neo">Bolero Neo</option>
+                    <option value="Alturas G4">Alturas G4</option>
+                    <option value="Bolero">Bolero</option>
+                    <option value="KUV100">KUV100</option>
+                    <option value="TUV300">TUV300</option>
+                    <option value="Armada">Armada</option>
+                    <option value="e20">e20</option>
+                    <option value="KUV100 NXT">KUV100 NXT</option>
+                    <option value="Marazzo">Marazzo</option>
+                    <option value="Marshal">Marshal</option>
+                    <option value="NuvoSport">NuvoSport</option>
+                    <option value="Quanto">Quanto</option>
+                    <option value="REVAI">REVAI</option>
+                    <option value="Scorpio Classic">Scorpio Classic</option>
+                    <option value="Scorpio Getaway">Scorpio Getaway</option>
+                    <option value="Thar Roxx">Thar Roxx</option>
+                    <option value="TUV 300 PLUS">TUV 300 PLUS</option>
+                    <option value="Verito">Verito</option>
+                    <option value="XUV 300 TurboSport">
+                      XUV 300 TurboSport
+                    </option>
+                    <option value="XUV 3XO">XUV 3XO</option>
+                    <option value="Xylo">Xylo</option>
+                    <option value="Seltos">Seltos</option>
+                    <option value="Sonet">Sonet</option>
+                    <option value="Carens">Carens</option>
+                    <option value="Carnival">Carnival</option>
+                    <option value="Freestyle">Freestyle</option>
+                    <option value="Classic">Classic</option>
+                    <option value="Escort">Escort</option>
+                    <option value="Fiesta">Fiesta</option>
+                    <option value="Fiesta Classic">Fiesta Classic</option>
+                    <option value="Fusion">Fusion</option>
+                    <option value="Ikon">Ikon</option>
+                    <option value="Mondeo">Mondeo</option>
+                    <option value="mustang">mustang</option>
+                    <option value="Polo">Polo</option>
+                    <option value="Ameo">Ameo</option>
+                    <option value="Virtus">Virtus</option>
+                    <option value="Tiguan">Tiguan</option>
+                    <option value="Cross Polo">Cross Polo</option>
+                    <option value="Vento">Vento</option>
+                    <option value="Taigun">Taigun</option>
+                    <option value="1600">1600</option>
+                    <option value="Beetle">Beetle</option>
+                    <option value="Jetta">Jetta</option>
+                    <option value="Passat">Passat</option>
+                    <option value="Phaeton">Phaeton</option>
+                    <option value="T-Roc">T-Roc</option>
+                    <option value="Tiguan AllSpace">Tiguan AllSpace</option>
+                    <option value="touareg">touareg</option>
+                    <option value="Glanza">Glanza</option>
+                    <option value="Innova Crysta">Innova Crysta</option>
+                    <option value="Corolla Altis">Corolla Altis</option>
+                    <option value="Etios">Etios</option>
+                    <option value="Etios Liva">Etios Liva</option>
+                    <option value="Etios Cross">Etios Cross</option>
+                    <option value="Camry">Camry</option>
+                    <option value="Urban Cruiser">Urban Cruiser</option>
+                    <option value="Urban Cruiser Hyryder">
+                      Urban Cruiser Hyryder
+                    </option>
+                    <option value="Alphard">Alphard</option>
+                    <option value="Celica">Celica</option>
+                    <option value="Corolla">Corolla</option>
+                    <option value="Corona">Corona</option>
+                    <option value="Fortuner">Fortuner</option>
+                    <option value="Hilux">Hilux</option>
+                    <option value="Innova">Innova</option>
+                    <option value="Innova Hycross">Innova Hycross</option>
+                    <option value="Land Cruiser">Land Cruiser</option>
+                    <option value="Land Cruiser Prado">
+                      Land Cruiser Prado
+                    </option>
+                    <option value="Prius">Prius</option>
+                    <option value="Qualis">Qualis</option>
+                    <option value="Rumion">Rumion</option>
+                    <option value="Urban Cruiser Taisor">
+                      Urban Cruiser Taisor
+                    </option>
+                    <option value="Yaris">Yaris</option>
+                    <option value="Kushaq">Kushaq</option>
+                    <option value="Slavia">Slavia</option>
+                    <option value="Rapid">Rapid</option>
+                    <option value="Karoq">Karoq</option>
+                    <option value="Octavia">Octavia</option>
+                    <option value="Superb">Superb</option>
+                    <option value="Fabia">Fabia</option>
+                    <option value="Fabia Scout">Fabia Scout</option>
+                    <option value="Kodiaq">Kodiaq</option>
+                    <option value="Laura">Laura</option>
+                    <option value="Octavia Combi">Octavia Combi</option>
+                    <option value="Superb Old">Superb Old</option>
+                    <option value="Yeti">Yeti</option>
+                    <option value="Magnite">Magnite</option>
+                    <option value="Micra">Micra</option>
+                    <option value="Sunny">Sunny</option>
+                    <option value="Micra Active">Micra Active</option>
+                    <option value="Terrano">Terrano</option>
+                    <option value="350Z">350Z</option>
+                    <option value="370Z">370Z</option>
+                    <option value="Evalia">Evalia</option>
+                    <option value="Kicks">Kicks</option>
+                    <option value="Teana">Teana</option>
+                    <option value="X-Trail">X-Trail</option>
+                    <option value="Compass">Compass</option>
+                    <option value="Meridian">Meridian</option>
+                    <option value="Wrangler">Wrangler</option>
+                    <option value="GO">GO</option>
+                    <option value="Go Puls">Go Puls</option>
+                    <option value="Hector">Hector</option>
+                    <option value="Hector Plus">Hector Plus</option>
+                    <option value="Astor">Astor</option>
+                    <option value="Gloster">Gloster</option>
+                    <option value="ZS EV">ZS EV</option>
+                    <option value="A4">A4</option>
+                    <option value="A3">A3</option>
+                    <option value="A3 Cabriolet">A3 Cabriolet</option>
+                    <option value="A6">A6</option>
+                    <option value="A6 Matrix">A6 Matrix</option>
+                    <option value="Q2">Q2</option>
+                    <option value="Q3">Q3</option>
+                    <option value="Q5">Q5</option>
+                    <option value="Q7">Q7</option>
+                    <option value="R8">R8</option>
+                    <option value="RS5">RS5</option>
+                    <option value="RS6">RS6</option>
+                    <option value="RS7 Sportback">RS7 Sportback</option>
+                    <option value="S5 Sportback">S5 Sportback</option>
+                    <option value="TT">TT</option>
+                    <option value="Beat">Beat</option>
+                    <option value="Spark">Spark</option>
+                    <option value="Aveo">Aveo</option>
+                    <option value="Aveo Old">Aveo Old</option>
+                    <option value="Aveo U-VA">Aveo U-VA</option>
+                    <option value="Captiva">Captiva</option>
+                    <option value="Cruze">Cruze</option>
+                    <option value="Enjoy">Enjoy</option>
+                    <option value="Forester">Forester</option>
+                    <option value="Optra">Optra</option>
+                    <option value="Optra Magnum">Optra Magnum</option>
+                    <option value="Optra SRV">Optra SRV</option>
+                    <option value="Sail">Sail</option>
+                    <option value="Sail Hatchback">Sail Hatchback</option>
+                    <option value="Sail U-VA">Sail U-VA</option>
+                    <option value="Tavera">Tavera</option>
+                    <option value="Trailblazer">Trailblazer</option>
+                    <option value="C-Class">C-Class</option>
+                    <option value="CLA">CLA</option>
+                    <option value="GLA">GLA</option>
+                    <option value="A-Class">A-Class</option>
+                    <option value="AMG GT">AMG GT</option>
+                    <option value="B-Class">B-Class</option>
+                    <option value="E-Class">E-Class</option>
+                    <option value="E-Class Cabriolet">E-Class Cabriolet</option>
+                    <option value="GL">GL</option>
+                    <option value="GLB">GLB</option>
+                    <option value="GLC">GLC</option>
+                    <option value="GLE">GLE</option>
+                    <option value="GLE Coupe">GLE Coupe</option>
+                    <option value="GLS">GLS</option>
+                    <option value="ML-Class">ML-Class</option>
+                    <option value="S-Coupe">S-Coupe</option>
+                    <option value="SL">SL</option>
+                    <option value="2 Series Gran Coupe">
+                      2 Series Gran Coupe
+                    </option>
+                    <option value="X1">X1</option>
+                    <option value="1 Series">1 Series</option>
+                    <option value="3 Series">3 Series</option>
+                    <option value="3 Series GT">3 Series GT</option>
+                    <option value="4 Series">4 Series</option>
+                    <option value="5 Series">5 Series</option>
+                    <option value="5 Series GT">5 Series GT</option>
+                    <option value="6 Series">6 Series</option>
+                    <option value="7 Series">7 Series</option>
+                    <option value="8 Series">8 Series</option>
+                    <option value="i8">i8</option>
+                    <option value="M3">M3</option>
+                    <option value="M5">M5</option>
+                    <option value="X3">X3</option>
+                    <option value="X4">X4</option>
+                    <option value="X5">X5</option>
+                    <option value="X6">X6</option>
+                    <option value="Z4">Z4</option>
+                    <option value="Discovery Sport">Discovery Sport</option>
+                    <option value="Discovery">Discovery</option>
+                    <option value="Discovery 3">Discovery 3</option>
+                    <option value="Discovery 4">Discovery 4</option>
+                    <option value="Range Rover Evoque">
+                      Range Rover Evoque
+                    </option>
+                    <option value="C5 Aircross">C5 Aircross</option>
+                    <option value="Basalt">Basalt</option>
+                    <option value="C3">C3</option>
+                    <option value="C3 AIRCROSS">C3 AIRCROSS</option>
+                  </select>
+                </div>
+                <!-- <div class=""> -->
+
+                <div class="col-4 mb-3 pt-sm-2">
+                  <label for="Color" class="form-label namelable">Color</label>
+                  <select class="form-control" name="Color" id="Color" required>
+                    <option value="" disabled selected></option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gray">Gray</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Beige">Beige</option>
+                    <option value="Purple">Purple</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Turquoise">Turquoise</option>
+                    <option value="Maroon">Maroon</option>
+                  </select>
+                </div>
+                <div class="col-4 mb-3 pt-sm-2">
+                  <label for="Chassis-No" class="form-label namelable"
+                    >Chassis No.</label
+                  >
+                 <input type="text" name="Chassis-No" id="Chassis-No" required>
+                </div>
+                <div class="col-4 mb-3 pt-sm-2">
+                  <label for="Service-Outlet" class="form-label namelable"
+                    >Service Outlet</label
+                  >
+
+                  <select
+                    class="form-control"
+                    name="Service-Outlet"
+                    id="Service-Outlet"
+                    required
+                  >
+                  <option value="" disabled selected></option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Surat">Surat</option>
+                  <option value="Vadodara">Vadodara</option>
+                  <option value="Bengaluru">Bengaluru</option>
+                  <option value="Nagpur">Nagpur</option>
+                  <option value="Jaipur">Jaipur</option>
+                  <option value="Indore">Indore</option>
+                  <option value="Agra">Agra</option>
+                  <option value="Rudrapur">Rudrapur</option>
+                  <option value="Mohali">Mohali</option>
+                  <option value="Guwahati">Guwahati</option>
+                  <option value="Dwarka">Dwarka</option>
+                  <option value="Janakpuri">Janakpuri</option>
+                  <option value="Ambience Mall">Ambience Mall</option>
+                  <option value="Promenade Mall">Promenade Mall</option>
+                  <option value="Gurugram">Gurugram</option>
+                  <option value="Noida">Noida</option>
+                    <option value="Delhi">Delhi</option>
+                  </select>
+                </div>
+              </div>
+              <!-- </div> -->
             </div>
-      
-            <div class="col-lg-4 right-section ">
-              <h3 class="right-heading">Services <span class="fw-bold text-white">Covered</span></h3>
-              <p class="bottom-text col-sm-8 ">Select the series you have choose for your car</p>
-      
-              <!-- <div class="checkbox-group my-4">
-                <label class="custom-checkbox">
-                  <input type="checkbox" name="selected_series" value="Optimum Series" />
-                  <span>Optimum Series</span>
-                </label>
-                <label class="custom-checkbox">
-                  <input type="checkbox" name="selected_series" value="Supreme Series"  />
-                  <span>Supreme Series</span>
-                </label>
-              </div> -->
-              <div class="radio-buttons my-4">
-                <label class="radio-container">
-                  <input type="radio" name="series" value="Optimum Series" />
-                  <span class="radio-label">Optimum Series</span>
-                </label>
-                
-                <label class="radio-container">
-                  <input type="radio" name="series" value="Supreme Series" />
-                  <span class="radio-label">Supreme Series</span>
-                </label>
-              </div>
-              
-      
-              <div class="form-section ">
-                <!-- Service Date -->
-                <div class="form-group servicebox d-flex align-items-center my-md-4 my-2">
-                  <label for="serviceDate" class="form-label col-7 service-lable">Service Date</label>
-                  <input type="date" class="form-control date-input " id="serviceDate" name="service_date" placeholder="MM / DD / YY" required />
-                </div>
-      
-                <!-- Upload Picture of Vehicle -->
-                <div class="form-group filebox ">
-                  <div>
-                    <label for="vehiclePicture" class="form-label service-lable">Upload picture of vehicle</label>
-                    <small class="form-text">Upload 1 supported file: PDF, document, or image. Max 1 GB</small>
 
-                  </div>
-
-                  <div class="file-upload ">
-                    <label for="vehiclePicture" class="upload-btn">
-                      <input type="file" id="vehiclePicture" style="display: none"  name="vehicle_picture"/>
-                      <i class="bi bi-upload"></i> Add File
-                    </label>
-                    <span id="fileName" style="margin-left: 10px; font-weight: bold;"></span> 
-                  </div>
-                </div>
-              </div>
-      
-              <div class="d-flex align-items-center amountfild">
-                <label for="amountPaid" class="form-label  col-7 service-lable">Total Amount Paid</label>
-                <input type="text" class="form-control" id="amountPaid" placeholder="₹" name="amount_paid"  required/>
-              </div>
-              <button type="submit" class="btn w-100 submitbtn mt-sm-2">Submit</button>
+            <div class="yellow-bg">
+              <p class="ps-4 ps-sm-5">
+                Our promise to you – <br />
+                <strong>Quality & Satisfaction</strong>
+              </p>
             </div>
           </div>
-        </form>
-      </div>
-      
- 
 
+          <div class="col-lg-4 right-section">
+            <h3 class="right-heading">
+              Services <span class="fw-bold text-white Covered"> Covered</span>
+            </h3>
+            <p class="bottom-text col-sm-8">
+              Select the series you have choose for your car
+            </p>
+            <div class="radio-buttons my-4">
+              <label class="radio-container">
+                <input type="radio" name="series" value="Optimum Series" />
+                <span class="radio-label">Optimum Series</span>
+              </label>
+
+              <label class="radio-container">
+                <input type="radio" name="series" value="Supreme Series" />
+                <span class="radio-label">Supreme Series</span>
+              </label>
+            </div>
+
+            <div class="form-section">
+              <!-- Service Date -->
+              <div
+                class="form-group servicebox d-flex align-items-center my-md-4 my-2"
+              >
+                <label for="serviceDate" class="form-label col-7 service-lable"
+                  >Service Date</label
+                >
+                <input
+                  type="date"
+                  class="form-control date-input"
+                  id="serviceDate"
+                  name="service_date"
+                  placeholder="MM/DD/YY"
+                  required
+                />
+              </div>
+
+              <!-- Upload Picture of Vehicle -->
+              <div class="form-group filebox">
+                <div>
+                  <label for="vehiclePicture" class="form-label service-lable"
+                    >Upload picture of vehicle</label
+                  >
+                  <small class="form-text"
+                    >Upload 1 supported file: PDF, document, or image. Max 1
+                    GB</small
+                  >
+                </div>
+                <div class="file-upload">
+                  <label for="vehiclePicture" class="upload-btn">
+                      <input
+                          type="file"
+                          id="vehiclePicture"
+                          style="display: none"
+                          name="vehicle_picture"
+                      />
+                      <i class="bi bi-upload"></i> Add File
+                  </label>
+                  <span
+                      id="fileName"
+                      style="margin-left: 10px; font-weight: bold"
+                  ></span>
+              </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center amountfild">
+              <label for="amountPaid" class="form-label col-7 service-lable"
+                >Total Amount Paid</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="amountPaid"
+                placeholder="₹"
+                name="amount_paid"
+                required
+              />
+            </div>
+            <button type="submit" class="btn w-100 submitbtn mt-sm-2">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
 
     <!-- <script>
       // Update the file name display when a file is selected
@@ -664,83 +1160,80 @@ input[type="date"]{
           });
       });
   </script> -->
-  
+
   <script>
-    document.getElementById('warrantyForm').addEventListener('submit', function(event) {
-        event.preventDefault();  // Prevent default form submission
+    //  document.getElementById('vehiclePicture').addEventListener('change', function() {
+    //         const fileInput = document.getElementById('vehiclePicture');
+    //         const fileNameDisplay = document.getElementById('fileName');
 
-        // Validate form fields
-        const customerName = document.getElementById('customerName').value;
-        const phoneNumber = document.getElementById('phoneNumber').value;
-        const vehicleType = document.getElementById('vehicleType').value;
-        const modelNumber = document.getElementById('modelNumber').value;
-        const color = document.getElementById('color').value;
-        const year = document.getElementById('year').value;
-        const serviceOutlet = document.getElementById('serviceOutlet').value;
-        const serviceDate = document.getElementById('serviceDate').value;
-        const amountPaid = document.getElementById('amountPaid').value;
+    //         // Get the name of the uploaded file
+    //         const fileName = fileInput.files[0] ? fileInput.files[0].name : 'No file selected';
+            
+    //         // Update the file name display
+    //         fileNameDisplay.textContent = fileName;
+    //     });
+    document
+      .getElementById("warrantyForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent default form submission
 
+
+        
+  
+        // Get form field values
+        const customerName = document.getElementById("customerName").value;
+        const phoneNumber = document.getElementById("phoneNumber").value;
+        const bodyType = document.getElementById("Body-Type").value;
+        const brand = document.getElementById("Brand").value;
+        const model = document.getElementById("Model").value;
+        const color = document.getElementById("Color").value;
+        const chassisNumber = document.getElementById("Chassis-No").value;
+        const serviceOutlet = document.getElementById("Service-Outlet").value;
+        const serviceDate = document.getElementById("serviceDate").value;
+        const amountPaid = document.getElementById("amountPaid").value;
+  
+        // Get selected radio button for series
+        const selectedSeries = document.querySelector(
+          'input[name="series"]:checked'
+        ).value;
+  
         // Get the file input value
-        const vehiclePictureInput = document.getElementById('vehiclePicture');
-        const vehiclePicture = vehiclePictureInput.files[0];  // File object (null if no file selected)
-
-        // Capture checkbox values (both series checkboxes)
-        const selectedSeries = [];
-        document.querySelectorAll('input[name="series"]:checked').forEach(checkbox => {
-            selectedSeries.push(checkbox.value);
-        });
-
-        // Console log all values (optional for testing)
-        console.log('Customer Name:', customerName);
-        console.log('Phone Number:', phoneNumber);
-        console.log('Vehicle Type:', vehicleType);
-        console.log('Model & Number:', modelNumber);
-        console.log('Color:', color);
-        console.log('Year:', year);
-        console.log('Service Outlet:', serviceOutlet);
-        console.log('Service Date:', serviceDate);
-        console.log('Amount Paid:', amountPaid);
-        console.log('Selected Series:', selectedSeries.join(', ')); // Join for a clean string
-        console.log('Vehicle Picture:', vehiclePicture ? vehiclePicture.name : 'No file selected');  // File name
-
-        // Create a FormData object to send both text and file data
-        const formData = new FormData();
-        formData.append('customer_name', customerName);
-        formData.append('phone_number', phoneNumber);
-        formData.append('vehicle_type', vehicleType);
-        formData.append('model_number', modelNumber);
-        formData.append('color', color);
-        formData.append('year', year);
-        formData.append('service_outlet', serviceOutlet);
-        formData.append('service_date', serviceDate);
-        formData.append('amount_paid', amountPaid);
-        formData.append('selected_series', selectedSeries.join(', '));
-        formData.append('vehicle_picture', vehiclePicture);  // Add the file to FormData
-
-        // Use emailjs.send to send FormData
-        emailjs.send('service_793fdcz', 'template_ltpnmjq', {
+        const vehiclePictureInput = document.getElementById("vehiclePicture");
+        const vehiclePicture = vehiclePictureInput.files[0]
+          ? vehiclePictureInput.files[0].name
+          : "No file selected"; // File object (null if no file selected)
+  
+          console.log(vehiclePicture)
+        // Send email using emailjs.send (without actual file upload)
+        emailjs
+          .send("service_793fdcz", "template_ltpnmjq", {
             customer_name: customerName,
             phone_number: phoneNumber,
-            vehicle_type: vehicleType,
-            model_number: modelNumber,
+            body_type: bodyType,
+            brand: brand,
+            model: model,
             color: color,
-            year: year,
+            chassis_number: chassisNumber,
             service_outlet: serviceOutlet,
             service_date: serviceDate,
             amount_paid: amountPaid,
-            selected_series: selectedSeries.join(', '),
-            vehicle_picture: vehiclePicture ? vehiclePicture.name : 'No file selected'
-        })
-        .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            alert('Email sent successfully with the image!');
-        }, function(error) {
-            console.error('FAILED...', error);
-            alert('Error sending email.');
-        });
-    });
-</script>
-
+            selected_series: selectedSeries,
+            vehicle_picture: vehiclePicture, // Just send the file name
+          
+          })
+          .then(
+            function (response) {
+              console.log("SUCCESS!", response.status, response.text);
+              alert("Email sent successfully with the image details!");
+            },
+            function (error) {
+              console.error("FAILED...", error);
+              alert("Error sending email.");
+            }
+          );
+      });
+  </script>
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
