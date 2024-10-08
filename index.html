@@ -13,6 +13,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
       (function () {
         emailjs.init("1c4y2FTo1ssJxkd6N"); // Apna EmailJS user ID yahan daalein
@@ -165,7 +166,6 @@
       .form-control input[type="text"]:focus {
         background-color: transparent;
 
-
         outline: none;
       }
       .right-heading {
@@ -304,7 +304,6 @@
         background-color: #e6b800;
         color: black;
         border-color: #e6b800;
-        
       }
 
       .radio-container .radio-label {
@@ -333,9 +332,10 @@
         padding-block: 20px;
       }
       .servicebox {
-        padding-block: 8px;
+        padding-block: 10px;
       }
-      .Vehiclerow select ,.Vehiclerow input[type="text"]{
+      .Vehiclerow select,
+      .Vehiclerow input[type="text"] {
         border-radius: 0px;
         border: none;
         border-bottom: 1px solid #000;
@@ -344,21 +344,41 @@
       .Vehiclerow select:focus {
         background-color: transparent;
       }
-      .Vehiclerow .form-control  {
+      .Vehiclerow .form-control {
         padding: 10px 10px;
       }
       .Vehiclerow .form-label {
         margin-left: 10px;
       }
-      .Vehiclerow input[type="text"]{
+      .Vehiclerow input[type="text"] {
         padding: 10px 10px;
-       width: 270px;
-
+        width: 270px;
       }
-      .Vehiclerow input[type="text"]:focus{
+      .Vehiclerow input[type="text"]:focus {
         outline: none;
       }
-      
+/* =================sweet============== */
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+  border: 0;
+  border-radius: .25em;
+  background: initial;
+  background-color:#e6b800;
+  color: #000;
+  font-size: 15px;
+}
+div:where(.swal2-container) h2:where(.swal2-title){
+  font-size: 20px;
+}
+div:where(.swal2-container) .swal2-html-container{
+  font-size: 12px;
+}
+/* =================sweet-end============== */
+
+#fileName{
+  font-size: 12px;
+  margin-left: 10px;
+}
+
       [type="button"]:not(:disabled),
       [type="reset"]:not(:disabled),
       [type="submit"]:not(:disabled),
@@ -369,7 +389,32 @@
       .Covered {
         display: block;
       }
+      .tooltip-inner {
+        background-color: #e6b800 !important; /* Background color yellow */
+        color: black !important; /* Text color black */
+        font-size: 12px !important; /* Make text smaller (change size as needed) */
+        font-weight: normal !important; /* Optional: Remove bold */
+        padding: 3px 5px; /* Adjust padding if needed */
+      }
 
+      /* Tooltip arrow background customization */
+      .tooltip-arrow::before {
+        border-bottom-color: #e6b800 !important; /* Arrow color for tooltips on bottom */
+      }
+
+      /* .tooltip-inner {
+  background-color: yellow !important;  
+  color: black !important;             
+  font-weight: bold;                    
+}
+
+
+.tooltip-arrow::before {
+  border-top-color: yellow !important;  
+  border-bottom-color: yellow !important; 
+  border-left-color: yellow !important; 
+  border-right-color: yellow !important; 
+} */
       @media (max-width: 768px) {
         .warranty-card {
           flex-direction: column;
@@ -445,7 +490,7 @@
         }
         .form-text {
           color: #999; /* Muted grey color */
-          font-size: 6px;
+          font-size: 10px;
           /* font-size: 0.75rem; */
         }
         .upload-btn {
@@ -458,7 +503,7 @@
           width: 140px;
         }
         .amountfild {
-          padding-block: 25px;
+          padding-block: 20px;
         }
         .left-heading {
           font-weight: 100;
@@ -478,6 +523,9 @@
           /* text-align: center; */
         }
 
+        .Covered {
+          display: inline;
+        }
         #amountPaid {
           font-size: 12px;
         }
@@ -487,20 +535,29 @@
         .outlate {
           padding-left: 10px;
         }
+        #fileName {
+    font-size: 8px;
+    margin-left: 3px;
+}
         .filebox {
           margin-block: 10px;
-          display: flex;
+          /* display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: center; */
         }
         .Vehiclerow .form-control {
           padding: 10px 10px;
           font-size: 9px;
         }
         .Vehiclerow input[type="text"] {
-    padding: 10px 10px;
-    width: 94px;
-}
+          padding: 10px 10px;
+          width: 94px;
+        }
+        .tooltip-inner {
+          font-size: 9px !important;
+          padding: 3px 5px;
+          font-weight: 600 !important;
+        }
       }
     </style>
   </head>
@@ -935,31 +992,18 @@
 
                 <div class="col-4 mb-3 pt-sm-2">
                   <label for="Color" class="form-label namelable">Color</label>
-                  <select class="form-control" name="Color" id="Color" required>
-                    <option value="" disabled selected></option>
-                    <option value="Black">Black</option>
-                    <option value="White">White</option>
-                    <option value="Silver">Silver</option>
-                    <option value="Gray">Gray</option>
-                    <option value="Red">Red</option>
-                    <option value="Blue">Blue</option>
-                    <option value="Green">Green</option>
-                    <option value="Yellow">Yellow</option>
-                    <option value="Brown">Brown</option>
-                    <option value="Orange">Orange</option>
-                    <option value="Beige">Beige</option>
-                    <option value="Purple">Purple</option>
-                    <option value="Gold">Gold</option>
-                    <option value="Pink">Pink</option>
-                    <option value="Turquoise">Turquoise</option>
-                    <option value="Maroon">Maroon</option>
-                  </select>
+                  <input type="text" name="color" id="Color" required />
                 </div>
                 <div class="col-4 mb-3 pt-sm-2">
                   <label for="Chassis-No" class="form-label namelable"
                     >Chassis No.</label
                   >
-                 <input type="text" name="Chassis-No" id="Chassis-No" required>
+                  <input
+                    type="text"
+                    name="Chassis-No"
+                    id="Chassis-No"
+                    required
+                  />
                 </div>
                 <div class="col-4 mb-3 pt-sm-2">
                   <label for="Service-Outlet" class="form-label namelable"
@@ -972,25 +1016,24 @@
                     id="Service-Outlet"
                     required
                   >
-                  <option value="" disabled selected></option>
-                  <option value="Hyderabad">Hyderabad</option>
-                  <option value="Surat">Surat</option>
-                  <option value="Vadodara">Vadodara</option>
-                  <option value="Bengaluru">Bengaluru</option>
-                  <option value="Nagpur">Nagpur</option>
-                  <option value="Jaipur">Jaipur</option>
-                  <option value="Indore">Indore</option>
-                  <option value="Agra">Agra</option>
-                  <option value="Rudrapur">Rudrapur</option>
-                  <option value="Mohali">Mohali</option>
-                  <option value="Guwahati">Guwahati</option>
-                  <option value="Dwarka">Dwarka</option>
-                  <option value="Janakpuri">Janakpuri</option>
-                  <option value="Ambience Mall">Ambience Mall</option>
-                  <option value="Promenade Mall">Promenade Mall</option>
-                  <option value="Gurugram">Gurugram</option>
-                  <option value="Noida">Noida</option>
-                    <option value="Delhi">Delhi</option>
+                    <option value="" disabled selected></option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Vadodara">Vadodara</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Agra">Agra</option>
+                    <option value="Rudrapur">Rudrapur</option>
+                    <option value="Mohali">Mohali</option>
+                    <option value="Guwahati">Guwahati</option>
+                    <option value="Dwarka">Dwarka</option>
+                    <option value="Janakpuri">Janakpuri</option>
+                    <option value="Ambience Mall">Ambience Mall</option>
+                    <option value="Promenade Mall">Promenade Mall</option>
+                    <option value="Gurugram">Gurugram</option>
+                    <option value="Noida">Noida</option>
                   </select>
                 </div>
               </div>
@@ -1010,15 +1053,37 @@
               Services <span class="fw-bold text-white Covered"> Covered</span>
             </h3>
             <p class="bottom-text col-sm-8">
-              Select the series you have choose for your car
+              Select the PPF series you have choose for your car
             </p>
-            <div class="radio-buttons my-4">
+            <!-- <div class="radio-buttons my-4">
               <label class="radio-container">
+                <input type="radio" name="series" value="Optimum Series" />
+                <span class="radio-label"  >Optimum Series</span>
+              </label>
+
+              <label class="radio-container">
+                <input type="radio" name="series" value="Supreme Series" />
+                <span class="radio-label">Supreme Series</span>
+                
+              </label>
+            </div> -->
+            <div class="radio-buttons my-4">
+              <label
+                class="radio-container"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="5 Years M.Warranty"
+              >
                 <input type="radio" name="series" value="Optimum Series" />
                 <span class="radio-label">Optimum Series</span>
               </label>
 
-              <label class="radio-container">
+              <label
+                class="radio-container"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="10 Years M.Warranty"
+              >
                 <input type="radio" name="series" value="Supreme Series" />
                 <span class="radio-label">Supreme Series</span>
               </label>
@@ -1029,7 +1094,9 @@
               <div
                 class="form-group servicebox d-flex align-items-center my-md-4 my-2"
               >
-                <label for="serviceDate" class="form-label col-6 col-sm-7 service-lable"
+                <label
+                  for="serviceDate"
+                  class="form-label col-6 col-sm-7 service-lable"
                   >Service Date</label
                 >
                 <input
@@ -1049,25 +1116,26 @@
                     >Upload picture of vehicle</label
                   >
                   <small class="form-text"
-                    >Upload 1 supported file: PDF, document, or image. Max 1
+                    >Upload 1 supported file: PNG , JPEG, JPG image, Max 1
                     GB</small
                   >
                 </div>
                 <div class="file-upload">
                   <label for="vehiclePicture" class="upload-btn">
-                      <input
-                          type="file"
-                          id="vehiclePicture"
-                          style="display: none"
-                          name="vehicle_picture"
-                      />
-                      <i class="bi bi-upload"></i> Add File
+                    <input
+                      type="file"
+                      id="vehiclePicture"
+                      style="display: none"
+                      name="vehicle_picture"
+                      accept=".jpg, .jpeg, .png"
+                    />
+                    <i class="bi bi-upload"></i> Add File
                   </label>
+               
                   <span
-                      id="fileName"
-                      style="margin-left: 10px; font-weight: bold"
+                    id="fileName"
                   ></span>
-              </div>
+                </div>
               </div>
             </div>
 
@@ -1163,81 +1231,500 @@
       });
   </script> -->
 
-  <script>
-    //  document.getElementById('vehiclePicture').addEventListener('change', function() {
-    //         const fileInput = document.getElementById('vehiclePicture');
-    //         const fileNameDisplay = document.getElementById('fileName');
+    <script>
+      const brandModels = {
+        "Maruti Suzuki": [
+          "Baleno",
+          "Wagon R",
+          "Dzire",
+          "Swift",
+          "Ciaz",
+          "Brezza",
+          "Alto 800",
+          "Celerio",
+          "Alto",
+          "S-Presso",
+          "Ertiga",
+          "Ignis",
+          "S-Cross",
+          "XL6",
+          "Ritz",
+          "A-Star",
+          "Eeco",
+          "Grand Vitara",
+          "New Ertiga",
+          "Celerio X",
+          "Fronx",
+          "Jimny",
+          "1000",
+          "800",
+          "Esteem",
+          "Estilo",
+          "Gypsy",
+          "Invicto",
+          "Omni",
+          "SX4",
+          "Versa",
+          "Zen",
+          "Zen Estilo",
+        ],
+        Hyundai: [
+          "Grand i10",
+          "i20",
+          "Verna",
+          "Creta",
+          "Venue",
+          "New Santro 1.1",
+          "Xcent",
+          "i10",
+          "Eon",
+          "Grand i10 Nios",
+          "Aura",
+          "Alcazar",
+          "Santro Xing",
+          "Elantra",
+          "Tucson",
+          "Accent",
+          "Accent Viva",
+          "Creta N-Line",
+          "Exter",
+          "Getz",
+          "Getz Prime",
+          "Neo Fluidic Elantra",
+          "Santa Fe",
+          "Santro",
+          "Sonata",
+          "Sonata Embera",
+          "Terracan",
+          "Venue N-Line",
+        ],
+        Honda: [
+          "Amaze",
+          "City",
+          "Brio",
+          "Jazz",
+          "WR-V",
+          "Mobilio",
+          "BR-V",
+          "Civic",
+          "CR-V",
+          "Elevate",
+          "Accord",
+          "Civic Hybrid",
+        ],
+        Tata: [
+          "Nexon",
+          "Tiago",
+          "Altroz",
+          "Punch",
+          "Tigor",
+          "Tiago NRG",
+          "Harrier",
+          "Hexa",
+          "Zest",
+          "Aria",
+          "Bolt",
+          "Curvy",
+          "Indica",
+          "Indica eV2",
+          "Indica V2",
+          "Indica V2 Turbo",
+          "Indica V2 Xeta",
+          "Indica Vista",
+          "Indicab",
+          "Indigo",
+          "Indigo CS",
+          "Indigo eCS",
+          "Indigo Marina",
+          "Indigo XL",
+          "Manza",
+          "Movus",
+          "Nano",
+          "Nano GenX",
+          "Nexon EV",
+          "Nexon EV Max",
+          "Nexon EV Prime",
+          "Safari",
+          "Safari Storme",
+          "Sierra",
+          "Sumo",
+          "Sumo Gold",
+          "Sumo Grande",
+          "Sumo Grande MK II",
+          "Sumo Spacio",
+          "Sumo Victa",
+          "Tiago EV",
+          "Tigor EV",
+          "Venture",
+          "Vista Tech",
+          "Xenon XT",
+        ],
+        Renault: [
+          "Kwid",
+          "Kiger",
+          "Triber",
+          "Duster",
+          "Captur",
+          "Fluence",
+          "Koleos",
+          "Lodgy",
+          "Logan",
+          "Pulse",
+          "Scala",
+        ],
+        Mahindra: [
+          "Thar",
+          "XUV 300",
+          "XUV500",
+          "XUV700",
+          "Scorpio",
+          "Scorpio N",
+          "Bolero Neo",
+          "Alturas G4",
+          "Bolero",
+          "KUV100",
+          "TUV300",
+          "Armada",
+          "e20",
+          "KUV100 NXT",
+          "Marazzo",
+          "Marshal",
+          "NuvoSport",
+          "Quanto",
+          "REVAI",
+          "Scorpio Classic",
+          "Scorpio Getaway",
+          "Thar Roxx",
+          "TUV 300 PLUS",
+          "Verito",
+          "XUV 300 TurboSport",
+          "XUV 3XO",
+          "Xylo",
+        ],
+        Kia: ["Seltos", "Sonet", "Carens", "Carnival"],
+        Ford: [
+          "Freestyle",
+          "Classic",
+          "Escort",
+          "Fiesta",
+          "Fiesta Classic",
+          "Fusion",
+          "Ikon",
+          "Mondeo",
+          "Mustang",
+        ],
+        Volkswagen: [
+          "Polo",
+          "Ameo",
+          "Virtus",
+          "Tiguan",
+          "Cross Polo",
+          "Vento",
+          "Taigun",
+          "1600",
+          "Beetle",
+          "Jetta",
+          "Passat",
+          "Phaeton",
+          "T-Roc",
+          "Tiguan AllSpace",
+          "Touareg",
+        ],
+        Toyota: [
+          "Glanza",
+          "Innova Crysta",
+          "Corolla Altis",
+          "Etios",
+          "Etios Liva",
+          "Etios Cross",
+          "Camry",
+          "Urban Cruiser",
+          "Urban Cruiser Hyryder",
+          "Alphard",
+          "Celica",
+          "Corolla",
+          "Corona",
+          "Fortuner",
+          "Hilux",
+          "Innova",
+          "Innova Hycross",
+          "Land Cruiser",
+          "Land Cruiser Prado",
+          "Prius",
+          "Qualis",
+          "Rumion",
+          "Urban Cruiser Taisor",
+          "Yaris",
+        ],
+        Skoda: [
+          "Kushaq",
+          "Slavia",
+          "Rapid",
+          "Karoq",
+          "Octavia",
+          "Superb",
+          "Fabia",
+          "Fabia Scout",
+          "Kodiaq",
+          "Laura",
+          "Octavia Combi",
+          "Superb Old",
+          "Yeti",
+        ],
+        Nissan: [
+          "Magnite",
+          "Micra",
+          "Sunny",
+          "Micra Active",
+          "Terrano",
+          "350Z",
+          "370Z",
+          "Evalia",
+          "Kicks",
+          "Teana",
+          "X-Trail",
+        ],
+        Jeep: ["Compass", "Meridian", "Wrangler"],
+        Datsun: ["GO", "Go Puls"],
+        "MG Motors": ["Hector", "Hector Plus", "Astor", "Gloster", "ZS EV"],
+        Audi: [
+          "A4",
+          "A3",
+          "A3 Cabriolet",
+          "A6",
+          "A6 Matrix",
+          "Q2",
+          "Q3",
+          "Q5",
+          "Q7",
+          "R8",
+          "RS5",
+          "RS6",
+          "RS7 Sportback",
+          "S5 Sportback",
+          "TT",
+        ],
+        Chevrolet: [
+          "Beat",
+          "Spark",
+          "Aveo",
+          "Aveo Old",
+          "Aveo U-VA",
+          "Captiva",
+          "Cruze",
+          "Enjoy",
+          "Forester",
+          "Optra",
+          "Optra Magnum",
+          "Optra SRV",
+          "Sail",
+          "Sail Hatchback",
+          "Sail U-VA",
+          "Tavera",
+          "Trailblazer",
+        ],
+        "Mercedes-Benz": [
+          "C-Class",
+          "CLA",
+          "GLA",
+          "A-Class",
+          "AMG GT",
+          "B-Class",
+          "E-Class",
+          "E-Class Cabriolet",
+          "GL",
+          "GLB",
+          "GLC",
+          "GLE",
+          "GLE Coupe",
+          "GLS",
+          "ML-Class",
+          "S-Coupe",
+          "SL",
+        ],
+        BMW: [
+          "2 Series Gran Coupe",
+          "X1",
+          "1 Series",
+          "3 Series",
+          "3 Series GT",
+          "4 Series",
+          "5 Series",
+          "5 Series GT",
+          "6 Series",
+          "7 Series",
+          "8 Series",
+          "i8",
+          "M3",
+          "M5",
+          "X3",
+          "X4",
+          "X5",
+          "X6",
+          "Z4",
+        ],
+        "Land Rover": [
+          "Discovery Sport",
+          "Discovery",
+          "Discovery 3",
+          "Discovery 4",
+          "Range Rover Evoque",
+        ],
+        Citroen: ["C5 Aircross", "Basalt", "C3", "C3 AIRCROSS"],
+      };
 
-    //         // Get the name of the uploaded file
-    //         const fileName = fileInput.files[0] ? fileInput.files[0].name : 'No file selected';
-            
-    //         // Update the file name display
-    //         fileNameDisplay.textContent = fileName;
-    //     });
-    document
-      .getElementById("warrantyForm")
-      .addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent default form submission
+      document.getElementById("Brand").addEventListener("change", function () {
+        const brand = this.value;
+        const modelSelect = document.getElementById("Model");
 
+        // Clear existing models
+        modelSelect.innerHTML =
+          '<option value="" disabled selected>Select Model</option>';
 
-        
-  
-        // Get form field values
-        const customerName = document.getElementById("customerName").value;
-        const phoneNumber = document.getElementById("phoneNumber").value;
-        const bodyType = document.getElementById("Body-Type").value;
-        const brand = document.getElementById("Brand").value;
-        const model = document.getElementById("Model").value;
-        const color = document.getElementById("Color").value;
-        const chassisNumber = document.getElementById("Chassis-No").value;
-        const serviceOutlet = document.getElementById("Service-Outlet").value;
-        const serviceDate = document.getElementById("serviceDate").value;
-        const amountPaid = document.getElementById("amountPaid").value;
-  
-        // Get selected radio button for series
-        const selectedSeries = document.querySelector(
-          'input[name="series"]:checked'
-        ).value;
-  
-        // Get the file input value
-        const vehiclePictureInput = document.getElementById("vehiclePicture");
-        const vehiclePicture = vehiclePictureInput.files[0]
-          ? vehiclePictureInput.files[0].name
-          : "No file selected"; // File object (null if no file selected)
-  
-          console.log(vehiclePicture)
-        // Send email using emailjs.send (without actual file upload)
-        emailjs
-          .send("service_793fdcz", "template_ltpnmjq", {
-            customer_name: customerName,
-            phone_number: phoneNumber,
-            body_type: bodyType,
-            brand: brand,
-            model: model,
-            color: color,
-            chassis_number: chassisNumber,
-            service_outlet: serviceOutlet,
-            service_date: serviceDate,
-            amount_paid: amountPaid,
-            selected_series: selectedSeries,
-            vehicle_picture: vehiclePicture, // Just send the file name
-          
-          })
-          .then(
-            function (response) {
-              console.log("SUCCESS!", response.status, response.text);
-              alert("Email sent successfully with the image details!");
-              document.getElementById("warrantyForm").reset(); // Reset all fields
-            },
-            function (error) {
-              console.error("FAILED...", error);
-              alert("Error sending email.");
-            }
-          );
+        if (brandModels[brand]) {
+          // Populate the model options
+          brandModels[brand].forEach(function (model) {
+            const option = document.createElement("option");
+            option.value = model;
+            option.textContent = model;
+            modelSelect.appendChild(option);
+          });
+        }
       });
-  </script>
-  
+    </script>
+    <script>
+       document.getElementById('vehiclePicture').addEventListener('change', function() {
+              const fileInput = document.getElementById('vehiclePicture');
+              const fileNameDisplay = document.getElementById('fileName');
 
+              // Get the name of the uploaded file
+              const fileName = fileInput.files[0] ? fileInput.files[0].name : 'No file selected';
+
+              // Update the file name display
+              fileNameDisplay.textContent = fileName;
+          });
+      document
+        .getElementById("warrantyForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent default form submission
+
+          // Get form field values
+          const customerName = document.getElementById("customerName").value;
+          const phoneNumber = document.getElementById("phoneNumber").value;
+          const bodyType = document.getElementById("Body-Type").value;
+          const brand = document.getElementById("Brand").value;
+          const model = document.getElementById("Model").value;
+          const color = document.getElementById("Color").value;
+          const chassisNumber = document.getElementById("Chassis-No").value;
+          const serviceOutlet = document.getElementById("Service-Outlet").value;
+          const amountPaid = document.getElementById("amountPaid").value;
+
+// // Get the selected service date
+// const serviceDateInput = document.getElementById('serviceDate').value;
+// const serviceDate = new Date(serviceDateInput);
+// const today = new Date();
+
+// // Remove the time portion from the dates for accurate comparison
+// today.setHours(0, 0, 0, 0);  // Set today's time to midnight
+
+// // Set the max allowed date to 7 days after the service date
+// const maxDate = new Date(serviceDate);
+// maxDate.setDate(serviceDate.getDate() + 7);  // Set max date to 7 days after the service date
+
+// // Check if the selected service date is older than today or more than 7 days from today
+// if (today > maxDate || serviceDate > today) {
+//     Swal.fire({
+//         title: "Oops!",
+//         text: "This form can only be submitted within 7 days after the service date. Please check your dates and try again!",
+//         icon: "error",
+//     });
+//     return;  // Stop form submission if the date is invalid
+// }
+
+// // If all checks pass, proceed with form submission
+
+
+const serviceDateInput = document.getElementById('serviceDate').value;
+const serviceDate = new Date(serviceDateInput);
+const today = new Date();
+
+// Format the service date to "YYYY-MM-DD"
+const formattedServiceDate = serviceDate.toISOString().split('T')[0];  // Get only the date part (YYYY-MM-DD)
+
+// Remove the time portion from the dates for accurate comparison
+today.setHours(0, 0, 0, 0);
+
+// Set the max allowed date to 7 days after the service date
+const maxDate = new Date(serviceDate);
+maxDate.setDate(serviceDate.getDate() + 7);
+
+// Check if the selected service date is older than today or more than 7 days from today
+if (today > maxDate || serviceDate > today) {
+    Swal.fire({
+        title: "Oops!",
+        text: "This form can only be submitted within 7 days after the service date. Please check your dates and try again!",
+        icon: "error",
+    });
+    return;  // Stop form submission if the date is invalid
+}
+
+          // Get selected radio button for series
+          const selectedSeries = document.querySelector(
+            'input[name="series"]:checked'
+          ).value;
+
+          // Get the file input value
+          const vehiclePictureInput = document.getElementById("vehiclePicture");
+          const vehiclePicture = vehiclePictureInput.files[0]
+            ? vehiclePictureInput.files[0].name
+            : "No file selected"; // File object (null if no file selected)
+
+          console.log(vehiclePicture);
+          // Send email using emailjs.send (without actual file upload)
+          emailjs
+            .send("service_793fdcz", "template_ltpnmjq", {
+              customer_name: customerName,
+              phone_number: phoneNumber,
+              body_type: bodyType,
+              brand: brand,
+              model: model,
+              color: color,
+              chassis_number: chassisNumber,
+              service_outlet: serviceOutlet,
+              service_date: formattedServiceDate,
+              amount_paid: amountPaid,
+              selected_series: selectedSeries,
+              vehicle_picture: vehiclePicture, // Just send the file name
+            })
+            .then(
+              function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+        Swal.fire({
+            title: "successfull!",
+            text: "warranty details submitted successfully! You will get a response from us within 72 hours",
+            icon: "success",
+        }).then(() => {
+            document.getElementById("warrantyForm").reset(); // Reset all fields after alert is closed
+        });
+              },
+              function (error) {
+                console.error("FAILED...", error);
+                alert("Error sending email.");
+              }
+            );
+        });
+    </script>
+    <script>
+      // Tooltip initialization
+      document.addEventListener("DOMContentLoaded", function () {
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
