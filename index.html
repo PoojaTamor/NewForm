@@ -329,10 +329,10 @@
         padding-block: 10px;
       }
       .amountfild {
-        padding-block: 20px;
+        padding-block: 10px;
       }
       .servicebox {
-        padding-block: 10px;
+        padding-block: 5px;
       }
       .Vehiclerow select,
       .Vehiclerow input[type="text"] {
@@ -356,6 +356,12 @@
       }
       .Vehiclerow input[type="text"]:focus {
         outline: none;
+      }
+      .form-check-label{
+        font-size: 14px;
+      }
+      .form-check{
+        padding-block: 10px;
       }
 /* =================sweet============== */
 div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
@@ -503,7 +509,7 @@ div:where(.swal2-container) .swal2-html-container{
           width: 140px;
         }
         .amountfild {
-          padding-block: 20px;
+          padding-block: 5px;
         }
         .left-heading {
           font-weight: 100;
@@ -511,6 +517,8 @@ div:where(.swal2-container) .swal2-html-container{
           padding-bottom: 10px;
           font-size: 25px;
         }
+  
+
         h4 {
           margin-bottom: 26px;
         }
@@ -522,6 +530,9 @@ div:where(.swal2-container) .swal2-html-container{
           border-radius: 0px;
           /* text-align: center; */
         }
+        .form-check-label{
+        font-size: 9px;
+      }
 
         .Covered {
           display: inline;
@@ -559,6 +570,7 @@ div:where(.swal2-container) .swal2-html-container{
           font-weight: 600 !important;
         }
       }
+    
     </style>
   </head>
   <body>
@@ -567,6 +579,9 @@ div:where(.swal2-container) .swal2-html-container{
         <div class="row warranty-card">
           <div class="col-lg-8 left-section">
             <div class="lest-div">
+              <!-- <h1 class="text-center text-uppercase">warranty</h1>
+              <p class="text-center">Fill your details to apply for the warranty</p> -->
+
               <h2 class="left-heading text-muted mt-4">
                 Warranty Card <br /><span class="text-dark">Details</span>
               </h2>
@@ -624,29 +639,30 @@ div:where(.swal2-container) .swal2-html-container{
                   <label for="Brand" class="form-label namelable">Brand</label>
                   <select class="form-control" name="Brand" id="Brand" required>
                     <option value="" disabled selected></option>
-                    <option value="Maruti Suzuki">Maruti Suzuki</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Citroen">Citroen</option>
+                    <option value="Datsun">Datsun</option>
+                    <option value="Ford">Ford</option>
                     <option value="Hyundai">Hyundai</option>
                     <option value="Honda">Honda</option>
-                    <option value="Tata">Tata</option>
-                    <option value="Renault">Renault</option>
-                    <option value="Mahindra">Mahindra</option>
                     <option value="Kia">Kia</option>
-                    <option value="Ford">Ford</option>
-                    <option value="Volkswagen">Volkswagen</option>
-                    <option value="Toyota">Toyota</option>
-                    <option value="Skoda">Skoda</option>
-                    <option value="Nissan">Nissan</option>
-                    <option value="Jeep">Jeep</option>
-                    <option value="Datsun">Datsun</option>
-                    <option value="MG Motors">MG Motors</option>
-                    <option value="Audi">Audi</option>
-                    <option value="Chevrolet">Chevrolet</option>
-                    <option value="Mercedes-Benz">Mercedes-Benz</option>
-                    <option value="BMW">BMW</option>
                     <option value="Land Rover">Land Rover</option>
-                    <option value="Citroen">Citroen</option>
+                    <option value="Mahindra">Mahindra</option>
+                    <option value="Maruti Suzuki">Maruti Suzuki</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="MG Motors">MG Motors</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Skoda">Skoda</option>
+                    <option value="Tata">Tata</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Jeep">Jeep</option>
                   </select>
                 </div>
+                
 
                 <div class="col-4 mb-3">
                   <label for="Model" class="form-label namelable">Model</label>
@@ -987,7 +1003,9 @@ div:where(.swal2-container) .swal2-html-container{
                     <option value="C3">C3</option>
                     <option value="C3 AIRCROSS">C3 AIRCROSS</option>
                   </select>
+                  
                 </div>
+                
                 <!-- <div class=""> -->
 
                 <div class="col-4 mb-3 pt-sm-2">
@@ -1042,8 +1060,10 @@ div:where(.swal2-container) .swal2-html-container{
 
             <div class="yellow-bg">
               <p class="ps-4 ps-sm-5">
-                Our promise to you – <br />
-                <strong>Quality & Satisfaction</strong>
+
+
+                Protection you can count on – <br />
+                <strong> for the product you trust.</strong>
               </p>
             </div>
           </div>
@@ -1151,6 +1171,17 @@ div:where(.swal2-container) .swal2-html-container{
                 name="amount_paid"
                 required
               />
+            </div>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="privacyPolicy"
+                required
+              />
+              <label class="form-check-label" for="privacyPolicy">
+                By ticking this box I agree that I have read the privacy policy
+              </label>
             </div>
             <button type="submit" class="btn w-100 submitbtn mt-sm-2">
               Submit
