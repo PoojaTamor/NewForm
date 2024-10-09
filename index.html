@@ -165,7 +165,6 @@
       }
       .form-control input[type="text"]:focus {
         background-color: transparent;
-
         outline: none;
       }
       .right-heading {
@@ -524,10 +523,17 @@ div:where(.swal2-container) .swal2-html-container{
           font-size: 12px;
         }
         input[type="date"] {
+          /* background-color: white; */
+          /* color: white !important; */
           font-size: 12px;
           width: 140px;
 
         }
+        /* input[type="date"]::placeholder{
+          color:black;
+          font-size: 40px;
+
+        } */
         .amountfild {
           padding-block: 5px;
         }
@@ -594,6 +600,7 @@ div:where(.swal2-container) .swal2-html-container{
     padding-bottom: 14px;
     font-weight: 500;
   }
+  
       }
     
     </style>
@@ -1147,9 +1154,9 @@ div:where(.swal2-container) .swal2-html-container{
                 <input
                   type="date"
                   class="form-control date-input"
+                  placeholder="YYYY-MM-DD"
                   id="serviceDate"
                   name="service_date"
-                  placeholder="MM / DD / YY"
                   required
                 />
               </div>
@@ -1781,6 +1788,8 @@ if (today > maxDate || serviceDate > today) {
         });
       });
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
